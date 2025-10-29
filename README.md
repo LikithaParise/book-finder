@@ -28,6 +28,8 @@ A sleek and responsive web application that allows users to search for books by 
 
 <img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/f31bd60f-c8ab-4512-ba52-71c1d9d4226f" />
 
+
+
 <img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/d437be90-fc6d-4078-a2ea-2cefb54f2753" />
 
 ## 🚀 Getting Started
@@ -103,8 +105,3 @@ Display more book metadata (publish year, subjects, etc.)
 Add loading indicators and error messages
 
 Improve accessibility and mobile responsiveness
-
-👨‍💻 Author
-Parise — LinkedIn | GitHub
-
-
