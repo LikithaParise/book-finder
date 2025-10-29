@@ -81,7 +81,9 @@ Example query:
 
 Code
 https://openlibrary.org/search.json?title=harry+potter
+
 📦 Build for Production
+
 bash
 npm run build
 Output will be in the dist/ folder.
