@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# 📚 Book Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive web application that allows users to search for books by title using the Open Library API. Built with **React**, **TypeScript**, and **Vite**, this project demonstrates clean UI design, API integration, and modern frontend development practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🔍 **Search by Book Title** — Users can search for books using keywords or full titles.
+- 📖 **Book Details** — Displays book title, author(s), and cover image (if available).
+- 🎨 **Clean UI** — Centered layout with a gradient background and styled components.
+- ⚡ **Fast Development** — Powered by Vite for lightning-fast HMR and builds.
+- 🧠 **Error Handling** — Gracefully handles empty input and missing data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology     | Description                            |
+|----------------|----------------------------------------|
+| React          | UI library for building components     |
+| TypeScript     | Strongly typed JavaScript              |
+| Vite           | Fast dev server and bundler            |
+| Open Library   | Free API for book data                 |
+| CSS / Tailwind | Custom styling (choose your approach)  |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clone the Repository
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/your-username/book-finder.git
+cd book-finder
+2. Install Dependencies
+bash
+npm install
+3. Start the Development Server
+bash
+npm run dev
+Visit http://localhost:5173 in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🧩 Project Structure
+Code
+book-finder/
+├── public/
+├── src/
+│   ├── App.tsx          # Main component with search logic
+│   ├── main.tsx         # Entry point
+│   ├── index.css        # Global styles
+│   └── assets/          # (Optional) Static assets
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+🧠 How It Works
+The user types a book title into the search bar.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+On clicking "Search", the app fetches data from:
+
+Code
+https://openlibrary.org/search.json?title=your_query
+The top 10 results are displayed with:
+
+Book title
+
+Author(s)
+
+Cover image (if available via cover_i)
+
+📸 Screenshots
+You can add screenshots here after deployment or during development.
+
+🌐 API Reference
+Open Library Search API https://openlibrary.org/dev/docs/api/search
+
+Example query:
+
+Code
+https://openlibrary.org/search.json?title=harry+potter
+📦 Build for Production
+bash
+npm run build
+Output will be in the dist/ folder.
+
+🙌 Acknowledgements
+Open Library
+
+React
+
+Vite
+
+TypeScript
+
+💡 Future Improvements
+Add pagination for more results
+
+Display more book metadata (publish year, subjects, etc.)
+
+Add loading indicators and error messages
+
+Improve accessibility and mobile responsiveness
+
+👨‍💻 Author
+Parise — LinkedIn | GitHub
