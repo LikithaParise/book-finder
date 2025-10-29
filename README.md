@@ -69,9 +69,9 @@ Author(s)
 Cover image (if available via cover_i)
 
 📸 Screenshots
-<img width="960" height="539" alt="image" src="https://github.com/user-attachments/assets/ca2c7ac4-343e-4b2e-b01d-a900d1591ce5" />
+<img width="960" height="539" alt="image" src="https://github.com/user-attachments/assets/ca2c7ac4-343e-4b2e-b01d-a900d1591ce5"/>
 
-<img width="960" height="539" alt="image" src="https://github.com/user-attachments/assets/327ef6a1-e93f-474d-b76b-69e2d19355ff" />
+<img width="960" height="539" alt="image" src="https://github.com/user-attachments/assets/327ef6a1-e93f-474d-b76b-69e2d19355ff"/>
 
 🌐 API Reference
 Open Library Search API https://openlibrary.org/dev/docs/api/search
